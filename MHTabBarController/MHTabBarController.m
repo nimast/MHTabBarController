@@ -102,7 +102,7 @@ static const NSInteger TagOffset = 1000;
 	{
 		UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
 		button.tag = TagOffset + index;
-		button.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+		button.titleLabel.font = [UIFont boldSystemFontOfSize:20];
 		button.titleLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
 
 		UIOffset offset = viewController.tabBarItem.titlePositionAdjustment;
@@ -159,7 +159,7 @@ static const NSInteger TagOffset = 1000;
 	rect.origin.x = button.center.x - floorf(indicatorImageView.frame.size.width/2.0f);
 	rect.origin.y = self.tabBarHeight - indicatorImageView.frame.size.height;
 	indicatorImageView.frame = rect;
-	indicatorImageView.hidden = NO;
+	indicatorImageView.hidden = YES;
 }
 
 - (void)setViewControllers:(NSArray *)newViewControllers
