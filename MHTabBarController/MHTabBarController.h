@@ -33,6 +33,11 @@
 @property (nonatomic, assign) NSUInteger selectedIndex;
 @property (nonatomic, weak) id <MHTabBarControllerDelegate> delegate;
 
+@property(nonatomic, strong) UIColor *selectedTabTitleColor;
+@property(nonatomic, strong) UIColor *tabTitleColor;
+@property(nonatomic, strong) UIImage *tabBackgroundImage;
+@property(nonatomic, strong) UIImage *selectedTabBackgroundImage;
+
 - (void)setSelectedIndex:(NSUInteger)index animated:(BOOL)animated;
 - (void)setSelectedViewController:(UIViewController *)viewController animated:(BOOL)animated;
 
