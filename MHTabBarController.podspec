@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author       = { "Matthijs Hollemans" => "mail@hollance.com" }
   s.source       = { :git => "https://github.com/nimast/MHTabBarController.git" }
   s.platform     = :ios, '5.0'
-  s.source_files = 'Classes', 'MHTabBarController.*'
+  s.source_files = ['MHTabBarController/*.{h,m}']
   s.resources = "Images/*.png"
   s.requires_arc = true
 end
